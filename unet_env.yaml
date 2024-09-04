@@ -16,5 +16,10 @@ dependencies:
     - logguru
     - tifffile==2023.7.10
     - zarr
-# pip install torch==2.3.0+cu121 torchvision==0.18.0+cu121 -f https://download.pytorch.org/whl/cu121/torch_stable.html
+#PyTorch version: 2.4.0+cu121, CUDA version: 12.1, Torchvision version: 0.19.0+cu121
 # pip install imutils
+#if server requirement for Pytorch and Uda not known:
+#>load module pytorch (on server)
+#>python
+#>import torch; print(f"PyTorch version: {torch.__version__}, CUDA version: {torch.version.cuda if torch.cuda.is_available() else 'CUDA not available'}")
+
